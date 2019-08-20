@@ -1,0 +1,5 @@
+name: integreatly
+title: Integreatly
+start_page: docs::getting-started.adoc
+nav:
+ - modules/ROOT/nav.adoc 

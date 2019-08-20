@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managing Users :: Integreatly Docs</title>
+    <meta name="generator" content="Antora 2.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar shadow border-bottom">
+    <div class="navbar-brand">
+      <a class="navbar-item logo" href="../.." title="Integreatly Docs"></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+              <a class="navbar-item" href="../../">Home</a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="../../docs/getting-started.html">Docs</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="../../docs/getting-started.html">Getting started</a>
+                <a class="navbar-item" href="../../docs/release-notes.html">Release Notes</a>
+                <a class="navbar-item" href="../../docs/walkthroughs.html">Solution Patterns</a>
+              </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="../../i8y-community/">Community</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="../../i8y-community/contributing/">Contributing</a>
+                <a class="navbar-item" href="../../i8y-community/team/">Team</a>
+              </div>
+              </div>
+              <a class="navbar-item" href="../../news/">News</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="docs" data-version="master">
+  <aside class="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="/docs/index.html">Integreatly</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../getting-started.html">Getting Started</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../release-notes.html">Release Notes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../walkthroughs.html">Solution Patterns</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Integreatly</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Integreatly</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../getting-started.html" class="home-link"></a>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Integreatly</a></li>
+    <li class="crumb"><a href="gs-adding-users-proc.html">Managing Users</a></li>
+  </ul>
+</nav>
+</div>
+<article class="doc">
+<h1>Managing Users</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>You manage users in the context of an Red Hat Single Sign-On realm. A realm manages a set of users, credentials, roles, and groups.  A user belongs to and logs into a realm.  Realms are isolated from one another and can only manage and authenticate the users that they control.</p>
+</div>
+<div class="paragraph">
+<p>{PRODUCT} provides two realms for user management:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>openshift</code> - users who develop solutions using the Red Hat applications available from the Solution Explorer</p>
+</li>
+<li>
+<p><code>{customer-realm-name}</code> - end users of the solutions developed by the users in the <code>openshift</code> realm</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Red Hat recommends that you define users of the solution you are developing in the <code>{customer-realm-name}</code> realm. For example, if you use {PRODUCT} to develop an solution named <code>my-app</code>, define all users of <code>my-app</code> in the <code>{customer-realm-name}</code> realm only.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_accessing_the_red_hat_single_sign_on_administration_console"><a class="anchor" href="#_accessing_the_red_hat_single_sign_on_administration_console"></a>Accessing the Red Hat Single Sign-On administration console</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To access the administration console navigate to the following URL, replacing <code>&lt;cluster-host&gt;</code> with the hostname of your cluster:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>https://sso-sso.&lt;cluster-host&gt;/auth/admin/openshift/console</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Log in as the <code>customer-admin</code> user using the credentials that you received in the <strong>Welcome</strong> email.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_viewing_users_in_the_red_hat_single_sign_on_administration_console"><a class="anchor" href="#_viewing_users_in_the_red_hat_single_sign_on_administration_console"></a>Viewing Users in the Red Hat Single Sign-On administration console</h2>
+<div class="sectionbody">
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You have logged into the Red Hat Single Sign-On administration console.</p>
+</li>
+<li>
+<p>You have selected the correct realm from the top left menu of realms, <code>openshift</code> for developers, <code>{customer-realm-name}</code> for solution end users.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To view user list:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to the <strong>Users</strong> menu. The search box at the top of the page can be used to query the list and only show users that matches your criteria.</p>
+</li>
+<li>
+<p>Click the <strong>View all users</strong> button at the top of the page. This displays the list of users currently available in the {PRODUCT} environment.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_users_in_the_red_hat_single_sign_on_administration_console"><a class="anchor" href="#_creating_users_in_the_red_hat_single_sign_on_administration_console"></a>Creating users in the Red Hat Single Sign-On administration console</h2>
+<div class="sectionbody">
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You have logged into the Red Hat Single Sign-On administration console.</p>
+</li>
+<li>
+<p>You have selected the correct realm from the top left menu of realms, <code>openshift</code> for developers, <code>{customer-realm-name}</code> for solution end users.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To create a user:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to the <strong>Users</strong> menu.</p>
+</li>
+<li>
+<p>Click the <strong>Add User</strong> button at the top right corner of the page.</p>
+</li>
+<li>
+<p>Enter the user information:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter values to <code>Username</code> and <code>Email</code>.</p>
+</li>
+<li>
+<p>Set <code>User Enabled</code> to <strong>ON</strong>.</p>
+</li>
+<li>
+<p>Set <code>Email Verified</code> to <strong>ON</strong>. This ensures that the user account will be activated in 3Scale.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Click the <strong>Save</strong> button to create the user.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You can also import a JSON file with user information as described in the <a href="https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.2/html/server_administration_guide/export_import#admin_console_export_import">RHSSO documentation</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The following example JSON file imports two users:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">{ "users": [
+    {
+      "username": "jdoe",
+      "enabled": true,
+      "emailVerified": true,
+      "email": "johndoe@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "realmRoles": ["offline_access", "uma_authorization"],
+      "clientRoles": {
+          "account": ["manage-account", "view-profile"]
+      },
+      "groups": [],
+      "attributes": {},
+      "credentials": [{
+        "type" : "password",
+        "value" : "Password1"
+      }]
+    },
+    {
+      "username": "msmith",
+      "enabled": true,
+      "emailVerified": true,
+      "email": "marysmith@example.com",
+      "firstName": "Mary",
+      "lastName": "Smith",
+      "realmRoles": ["offline_access", "uma_authorization"],
+      "clientRoles": {
+          "account": ["manage-account", "view-profile"]
+      },
+      "groups": [],
+      "attributes": {},
+      "credentials": [{
+        "type" : "password",
+        "value" : "Password1"
+      }]
+    }
+  ]
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setting_user_passwords_in_the_red_hat_single_sign_on_administration_console"><a class="anchor" href="#_setting_user_passwords_in_the_red_hat_single_sign_on_administration_console"></a>Setting user passwords in the Red Hat Single Sign-On administration console</h2>
+<div class="sectionbody">
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You have logged into the Red Hat Single Sign-On administration console.</p>
+</li>
+<li>
+<p>You have selected the correct realm from the top left menu of realms, <code>openshift</code> for developers, <code>{customer-realm-name}</code> for solution end users.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To set user passwords:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to the <strong>Users</strong> menu.</p>
+</li>
+<li>
+<p>Find the user you wish to edit and click on their <strong>Edit</strong> button associated with the user.</p>
+</li>
+<li>
+<p>Go to the <strong>Credentials</strong> tab.</p>
+</li>
+<li>
+<p>Set a password for the user and click the <strong>Reset Password</strong> button to save.</p>
+</li>
+<li>
+<p>If you require the user to update their password upon login, set the <code>Temporary</code> field to <strong>ON</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_deleting_users_in_the_red_hat_single_sign_on_administration_console"><a class="anchor" href="#_deleting_users_in_the_red_hat_single_sign_on_administration_console"></a>Deleting users in the Red Hat Single Sign-On administration console</h2>
+<div class="sectionbody">
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You have logged into the Red Hat Single Sign-On administration console.</p>
+</li>
+<li>
+<p>You have selected the correct realm from the top left menu of realms, <code>openshift</code> for developers, <code>{customer-realm-name}</code> for solution end users.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To delete users:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to the <strong>Users</strong> menu</p>
+</li>
+<li>
+<p>Click the <strong>View all users</strong> button at the top of the page.</p>
+</li>
+<li>
+<p>Find the user you wish to delete</p>
+</li>
+<li>
+<p>Click the <strong>Delete</strong> button associated to the user you wish to remove.</p>
+</li>
+<li>
+<p>Click <strong>Delete</strong> in the confirmation box to proceed.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_red_hat_3scale_api_management_platform_users"><a class="anchor" href="#_managing_red_hat_3scale_api_management_platform_users"></a>Managing Red Hat 3scale API Management Platform users</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Users created in  Red Hat Single Sign-On can login to the 3Scale console, however the user&#8217;s account is created in 3Scale after that initial login. The new user is assigned the role <code>member</code> and no permissions set by default. The user role and permission can only be set once a user account is created in 3Scale.</p>
+</div>
+<div class="paragraph">
+<p>To make sure you create users with the correct roles for Red Hat 3scale API Management Platform:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create the user using Red Hat Single Sign-On administration console.</p>
+</li>
+<li>
+<p>Make sure that user logs into the  Red Hat 3scale API Management Platform console.</p>
+</li>
+<li>
+<p>Log into the  Red Hat 3scale API Management Platform administration console and assign the roles to that user.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_accessing_the_red_hat_3scale_api_management_platform_administration_console"><a class="anchor" href="#_accessing_the_red_hat_3scale_api_management_platform_administration_console"></a>Accessing the Red Hat 3scale API Management Platform administration console</h3>
+<div class="paragraph">
+<p>To access the Red Hat 3scale API Management Platform administration console:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to the <strong>Red Hat Solution Explorer</strong> URL that you received in the <strong>Welcome</strong> email.
+If asked for credentials, login as the <code>customer-admin</code> user.</p>
+</li>
+<li>
+<p>Click the <strong>Red Hat 3scale API Management Platform</strong> link available in the <strong>Applications</strong> panel.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_setting_user_roles_and_permissions_in_red_hat_3scale_api_management_platform_administration_console"><a class="anchor" href="#_setting_user_roles_and_permissions_in_red_hat_3scale_api_management_platform_administration_console"></a>Setting user roles and permissions in Red Hat 3scale API Management Platform administration console</h3>
+<div class="ulist">
+<div class="title">Prerequisite</div>
+<ul>
+<li>
+<p>You have logged into the Red Hat 3scale API Management Platform administration console.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+All users in 3Scale are created as a <code>member</code> with no permissions set by default.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To change permissions for a 3Scale user:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <strong>Account Settings</strong> by clicking the gear icon in the top right of the 3Scale console.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../_images/gs-adding-users-3scale-account-settings.png" alt="3Scale account settings"></span></p>
+</div>
+</li>
+<li>
+<p>Select <strong>Listings</strong> from the <strong>Users</strong> menu.
+A list of users is displayed.</p>
+</li>
+<li>
+<p>Find the user you want to change, and click on the <strong>Edit</strong> button for that user.</p>
+</li>
+<li>
+<p>On the <strong>Edit User</strong> page, change the user&#8217;s roles and permissions:</p>
+<div class="paragraph">
+<p><span class="image"><img src="../_images/gs-adding-users-3scale-edit-user-page.png" alt="3Scale edit user page"></span></p>
+</div>
+<div class="paragraph">
+<p>For example, you can give the user the <strong>Admin</strong> role.</p>
+</div>
+</li>
+<li>
+<p>Click the <strong>Update User</strong> button to save your changes.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_deleting_users_in_the_red_hat_3scale_api_management_platform_administration_console"><a class="anchor" href="#_deleting_users_in_the_red_hat_3scale_api_management_platform_administration_console"></a>Deleting users in the Red Hat 3scale API Management Platform administration console</h3>
+<div class="ulist">
+<div class="title">Prerequisite</div>
+<ul>
+<li>
+<p>You have logged into the Red Hat 3scale API Management Platform administration console.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To delete 3Scale users:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <strong>Account Settings</strong>.</p>
+</li>
+<li>
+<p>Go to <strong>Users</strong> &gt; <strong>Listings</strong>.</p>
+</li>
+<li>
+<p>Find the user you wish to delete.</p>
+</li>
+<li>
+<p>Click the <strong>Delete</strong> button associated with that user.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_giving_users_permissions_to_view_integration_logs_and_perform_3scale_service_discovery"><a class="anchor" href="#_giving_users_permissions_to_view_integration_logs_and_perform_3scale_service_discovery"></a>Giving users permissions to view integration logs and perform 3Scale service discovery</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This procedure describes how to add the <strong>view</strong> role for a user if that user requires either of the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://access.redhat.com/documentation/en-us/red_hat_3scale_api_management/2.4/html-single/service_discovery/index">Service Discovery</a> in 3Scale, which an be used to add Fuse Online services automatically</p>
+</li>
+<li>
+<p>Access to Fuse Online integration logs</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Log into OpenShift using <code>oc</code> and the <code>customer-admin</code> credentials.</p>
+</li>
+<li>
+<p>Run the following command, where <code>&lt;userid&gt;</code> is the user you want to give the role to:</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>oc adm policy add-role-to-user view &lt;userid&gt; -n openshift-fuse</pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="logo">
+    </div>
+    <div>
+      <h3>Product sites</h3>
+      <ul>
+        <li><a href="">3scale</a></li>
+        <li><a href="">Che</a></li>
+        <li><a href="">EnMasse</a></li>
+        <li><a href="">Fuse Online</a></li>
+        <li><a href="">Launcher</a></li>
+        <li><a href="">RH-SSO</a></li>
+        <li><a href="">Solution Explorer</a></li>
+        <li><a href="">Apicurito</a></li>
+        <li><a href="">Nexus</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Community</h3>
+      <ul>
+        <li><a href="">Github</a></li>
+        <li><a href="">Jira Repo Issues</a></li>
+        <li><a href="">Contribution Guide</a></li>
+        <li><a href="">Google Group</a></li>
+        <li><a href="">IRC</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Social</h3>
+      <ul>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">YouTube</a></li>
+        <li><a href="">Feed</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    The Integreatly project is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> License, and is subject to the <a href="/legal/export">Export
+      Policy</a>.
+  </div>
+</footer><script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

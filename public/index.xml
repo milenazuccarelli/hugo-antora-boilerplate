@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Agile integration
+made easy. on Integreatly Website</title><link>/</link><description>Recent content in Agile integration
+made easy. on Integreatly Website</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 23 May 2019 14:57:43 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>First Most</title><link>/news/first-most/</link><pubDate>Thu, 23 May 2019 14:57:43 +0100</pubDate><guid>/news/first-most/</guid><description>As of today, Red Hat OpenShift 4 is generally available to Red Hat customers. This rearchitecting in how we install, upgrade and manage the platform also brings with it the power of Kubernetes Operators, Red Hat Enterprise Linux CoreOS, and the Istio-based OpenShift Service Mesh. As transformational as our open hybrid cloud platform can be for managing software at scale, the more impressive transformation may lay ahead for your development and IT teams, as they can now offer more on-demand services in a more secure fashion.</description></item><item><title>second</title><link>/news/second/</link><pubDate>Thu, 23 May 2019 14:57:43 +0100</pubDate><guid>/news/second/</guid><description>As of today, Red Hat OpenShift 4 is generally available to Red Hat customers. This rearchitecting in how we install, upgrade and manage the platform also brings with it the power of Kubernetes Operators, Red Hat Enterprise Linux CoreOS, and the Istio-based OpenShift Service Mesh. As transformational as our open hybrid cloud platform can be for managing software at scale, the more impressive transformation may lay ahead for your development and IT teams, as they can now offer more on-demand services in a more secure fashion.</description></item><item><title>What is Integreatly?</title><link>/card/integreatly/</link><pubDate>Tue, 09 Apr 2019 10:58:08 -0400</pubDate><guid>/card/integreatly/</guid><description>&lt;ul&gt;
+&lt;li&gt;API connectivity&lt;/li&gt;
+&lt;li&gt;Data transformation&lt;/li&gt;
+&lt;li&gt;Service composition and orchestration&lt;/li&gt;
+&lt;li&gt;Real-time messaging&lt;/li&gt;
+&lt;li&gt;API management&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Openshift</title><link>/card/openshift/</link><pubDate>Thu, 13 Apr 2017 11:15:58 -0400</pubDate><guid>/card/openshift/</guid><description>&lt;p&gt;Integreatly runs on OpenShift. See&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.openshift.com/learn/get-started/&#34;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.openshift.com/&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Walkthroughs</title><link>/card/walkthroughs/</link><pubDate>Wed, 12 Apr 2017 11:14:48 -0400</pubDate><guid>/card/walkthroughs/</guid><description>&lt;p&gt;Each walkthrough consists of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Asciidoc code&lt;/li&gt;
+&lt;li&gt;A set of tasks the user performs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;walkthrough.json&lt;/code&gt; file&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Learning 3scale</title><link>/card/3scale/</link><pubDate>Tue, 11 Apr 2017 11:13:32 -0400</pubDate><guid>/card/3scale/</guid><description>&lt;p&gt;Learn about API management.&lt;/p&gt;</description></item><item><title>Identity</title><link>/card/identity/</link><pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate><guid>/card/identity/</guid><description>&lt;p&gt;Each Integreatly user has:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a Fuse Online instance&lt;/li&gt;
+&lt;li&gt;an AMQ Online instance&lt;/li&gt;
+&lt;li&gt;a 3scale account&lt;/li&gt;
+&lt;li&gt;access to a shared Launcher&lt;/li&gt;
+&lt;li&gt;CodeReady Workspaces (che)&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Introduction to learning Fuse</title><link>/card/learning-fuse/</link><pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate><guid>/card/learning-fuse/</guid><description>&lt;p&gt;Integreatly includes Fuse Online.
+Fuse allows you develop with the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://access.redhat.com/announcements/4097241&#34;&gt;Announcement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://access.redhat.com/announcements/3557011&#34;&gt;Finding docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://access.redhat.com/documentation/en-us/red_hat_fuse/7.3/html-single/release_notes/&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Integreatly 1.4</title><link>/card/versions/</link><pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate><guid>/card/versions/</guid><description>&lt;ul&gt;
+&lt;li&gt;3scale 2.5&lt;/li&gt;
+&lt;li&gt;Fuse 7.3&lt;/li&gt;
+&lt;li&gt;AMQ Online 1.1&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Contributing</title><link>/i8y-community/contributing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/i8y-community/contributing/</guid><description> Contributing to AeroGear
+AeroGear GitHub Workflow
+How to Handle AeroGear Pull Requests
+AeroGear JIRA Usage and Guidelines
+AeroGear Versioning Policy</description></item><item><title>Export Compliance/Customs Information</title><link>/legal/export/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/legal/export/</guid><description>By downloading Integreatly software, you acknowledge that you understand all of the following: Integreatly software and technical information may be subject to the U.S. Export Administration Regulations (the “EAR”) and other U.S. and foreign laws and may not be exported, re-exported or transferred (a) to a prohibited destination country under the EAR or U.S. sanctions regulations (currently Cuba, Iran, North Korea, Sudan, Syria, and the Crimea Region of Ukraine, subject to change as posted by the United States government); (b) to any prohibited destination or to any end user who has been prohibited from participating in U.</description></item><item><title>Team</title><link>/i8y-community/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/i8y-community/team/</guid><description>A full list of contributors that help develop and maintain the AeroGear project is available on our GitHub organisation page.
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&amp;#8217;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&amp;#8217;t anything embarrassing hidden in the middle of text.</description></item></channel></rss>

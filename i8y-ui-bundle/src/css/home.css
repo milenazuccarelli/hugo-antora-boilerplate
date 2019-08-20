@@ -1,0 +1,208 @@
+.banner-wrap {
+  display: flex;
+}
+
+.banner-home {
+  min-height: 65vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-home {
+    min-height: 75vh;
+  }
+}
+
+.banner {
+  background: url(../img/banner.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.banner h1,
+.action h1 {
+  font-family: var(--font-family-display);
+  color: #fff;
+  margin: 0;
+  padding: 1em;
+}
+
+.banner h1 p {
+  margin: 0;
+}
+
+.action h1 {
+  padding-bottom: 0.5em;
+  padding-top: 0;
+}
+
+.action-wrap {
+  display: flex;
+}
+
+.action {
+  background: url(../img/action.jpg);
+  background-size: cover;
+  width: 100%;
+  padding: 3em;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.action div {
+  flex: 100%;
+}
+
+a.try-button {
+  background: var(--color-tertiary);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+  height: 46px;
+  outline: none;
+  padding: 1em 2em;
+  font-size: 0.8em;
+  -webkit-box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.7);
+}
+
+a.try-button:hover {
+  color: var(--color-light-shade);
+  background: var(--color-tertiary-shade);
+}
+
+.circle {
+  height: 58px;
+  z-index: 2;
+  width: 58px;
+  display: block;
+  position: relative;
+  background-color: var(--color-bg-light);
+  margin: -28px auto 0 auto;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.7);
+}
+
+.circle::before {
+  border-style: solid;
+  border-color: var(--color-secondary);
+  border-width: 2px 2px 0 0;
+  content: '';
+  display: inline-block;
+  height: 12px;
+  left: 38.5%;
+  position: relative;
+  top: 36%;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  vertical-align: top;
+  width: 12px;
+}
+
+.circle:hover {
+  background-color: var(--color-bg-light-shade);
+}
+
+.home #start {
+  margin: 0 auto;
+  padding: 2rem 0 0 0;
+  text-align: center;
+}
+
+.home .doc h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--color-secondary);
+  margin: 0 0 1em 0;
+}
+
+.home .list .card h1 {
+  font-size: 1.17em;
+  text-align: left;
+  color: var(--color-secondary);
+  margin: 0 0 1em 0;
+}
+
+.home .doc .imageblock img {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.home .doc,
+.home .list {
+  padding: 2rem 1rem 2em;
+}
+
+.home .list {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Helpers for different feature cards with nice icons */
+
+.feat-wrap {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.feat {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  margin: 0 auto 1em auto;
+  width: 80%;
+  text-align: left;
+}
+
+.feat-left {
+  padding-left: 35%;
+}
+
+.feat-right {
+  padding-right: 35%;
+  background-position: right;
+}
+
+.stack {
+  margin-top: 6rem; /* use if there is more than one block */
+}
+
+.solution {
+  background-image: url(../img/solution-explorer.png);
+}
+
+.cubes {
+  background-image: url(../img/cubes.png);
+}
+
+.tower {
+  background-image: url(../img/tower.png);
+}
+
+@media (max-width: 1024px) {
+  .feat {
+    background-size: 100% auto;
+    padding-top: 100%;
+  }
+
+  .feat-left { padding-left: 0; }
+
+  .feat-right {
+    padding-right: 0;
+    background-position: top;
+  }
+}
+
+.feat-title {
+  font-family: var(--font-family-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-align: left;
+}

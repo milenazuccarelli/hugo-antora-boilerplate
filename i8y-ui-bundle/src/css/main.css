@@ -1,0 +1,17 @@
+@media screen and (min-width: 1024px) {
+  .main-wrapper {
+    display: flex;
+  }
+
+  .main {
+    flex: auto;
+    /* min-width: 0 required for flexbox to constrain overflowing elements */
+    min-width: 0;
+  }
+}
+
+.page {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem 1rem 4em;
+}

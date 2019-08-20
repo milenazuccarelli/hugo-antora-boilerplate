@@ -1,0 +1,79 @@
+footer.footer {
+  font-size: 0.85rem;
+  background-color: var(--color-bg-dark);
+  color: var(--color-light);
+  padding: 3.5rem 1rem;
+}
+
+footer .wrap {
+  width: var(--document-width-medium);
+  padding-bottom: 4em;
+}
+
+footer .copyright {
+  width: var(--document-width-medium);
+  border-top: 1px solid var(--color-medium-shade);
+  margin: 0 auto;
+  padding: 1em 0 0 0;
+  color: var(--color-medium-shade);
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .wrap {
+    width: var(--document-width-large);
+  }
+
+  footer .copyright {
+    width: var(--document-width-large);
+  }
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer div {
+  flex: 1;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer div {
+    flex: 100%;
+  }
+}
+
+.footer .logo {
+  background: url(../img/Logo-RedHat-A-Reverse-RGB.svg) no-repeat;
+  background-size: 30%;
+  flex: 2;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 500px) {
+  .footer .logo {
+    background-size: 20%;
+    padding: 3em;
+  }
+}
+
+.footer h3 {
+  color: var(--color-medium);
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.footer a {
+  color: var(--color-light);
+}
+
+.footer a:hover {
+  color: var(--color-medium-shade);
+}

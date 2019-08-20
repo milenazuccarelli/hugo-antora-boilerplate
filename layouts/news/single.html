@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+{{ $section := .Site.GetPage "section" .Section }}
+
+<div class="main-wrapper">
+
+    <main class="main">
+        <article class="page">
+            <h1>{{ .Title }}</h1>
+
+            {{ if .Date }}
+            <p>
+                {{ .Date.Format "January 2, 2006" }}
+            </p>
+            {{ end }}
+
+            {{ .Content }}
+        </article>
+    </main>
+</div>
+
+{{ partial "footer.html" . }}

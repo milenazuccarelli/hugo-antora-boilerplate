@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0-SNAPSHOT",
+  "license": "Apache-2.0",
+  "scripts": {
+    "documentation": "antora --require ./menu.js --clean --fetch site.yml",
+    "website": "hugo --minify",
+    "critical": "gulp critical",
+    "minify": "gulp minify",
+    "build": "run-s documentation website minify critical",
+    "preview": "hugo server -D",
+    "check": "link-checker --disable-external --mkdocs --allow-hash-href public"
+  },
+  "devDependencies": {
+    "@antora/cli": "~2.0",
+    "@antora/site-generator-default": "~2.0",
+    "critical": "^2.0.0-19",
+    "gulp": "~4.0",
+    "gulp-htmlmin": "~5.0",
+    "hugo-cli": "~0.9",
+    "link-checker": "^1.2.1",
+    "npm-run-all": "~4.1",
+    "opal-runtime": "1.0.11"
+  },
+  "installConfig": {
+    "pnp": false
+  },
+  "dependencies": {
+    "handlebars": "~4.1",
+    "js-yaml": "3.13.1",
+    "toml": "~3.0"
+  }
+}

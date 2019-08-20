@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+
+<div class="home">
+
+    <article class="">
+        <section class="">
+            {{ .Content }}
+        </section>
+        <div class="list">
+            {{ range .Paginator.Pages }}
+            <div class="card-wrap">
+                <div class="card">
+                    {{ .Render "summary" }}
+                </div>
+            </div>
+            {{ end }}
+
+    </article>
+
+    {{ template "_internal/pagination.html" . }}
+</div>
+</div>
+{{ partial "footer.html" . }}

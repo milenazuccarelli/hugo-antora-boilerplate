@@ -1,0 +1,17 @@
+<div>
+  <h1 class="display">
+    {{ .Title }}
+  </h1>
+  <div>
+    {{ .Summary  }}
+  </div>
+</div>
+{{ if .Params.read_more_url }}
+<div class="more">
+  <a href="{{ .Params.read_more_url | markdownify }}">Read More &rarr;</a>
+</div>
+{{ else if .Truncated }}
+<div class="more">
+  <a href="{{ .RelPermalink }}">Read More &rarr;</a>
+</div>
+{{ end }}

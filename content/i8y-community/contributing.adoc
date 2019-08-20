@@ -1,0 +1,11 @@
+---
+title: "Contributing"
+---
+
+# Contributing to AeroGear
+
+- Contributing to AeroGear
+- AeroGear GitHub Workflow
+- How to Handle AeroGear Pull Requests
+- AeroGear JIRA Usage and Guidelines
+- AeroGear Versioning Policy

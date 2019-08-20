@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+{{ $section := .Site.GetPage "section" .Section }}
+
+<div class="main-wrapper">
+
+    <main class="main">
+        <article class="page">
+            <h1>{{ .Title }}</h1>
+
+            {{ .Content }}
+        </article>
+    </main>
+</div>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+{{/*
+  This template is the same as the default and is here to demonstrate that if you have a content directory called "post" you can create a layouts directory, just for that section.
+   */}}
+<div class="home">
+
+    <article class="">
+        <section class="">
+            {{ .Content }}
+        </section>
+        <div class="list" style="display: flex; flex-wrap: wrap; justify-content: center;">
+            {{ range .Paginator.Pages }}
+            <div class="card-wrap">
+                <div class="card">
+                    {{ .Render "summary" }}
+                </div>
+            </div>
+            {{ end }}
+
+    </article>
+
+    {{ template "_internal/pagination.html" . }}
+</div>
+</div>
+{{ partial "footer.html" . }}

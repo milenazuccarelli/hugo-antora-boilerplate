@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cards on Integreatly Website</title><link>/card/</link><description>Recent content in Cards on Integreatly Website</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 02 Jun 2019 12:00:00 -0500</lastBuildDate><atom:link href="/card/index.xml" rel="self" type="application/rss+xml"/><item><title>What is Integreatly?</title><link>/card/integreatly/</link><pubDate>Tue, 09 Apr 2019 10:58:08 -0400</pubDate><guid>/card/integreatly/</guid><description>&lt;ul&gt;
+&lt;li&gt;API connectivity&lt;/li&gt;
+&lt;li&gt;Data transformation&lt;/li&gt;
+&lt;li&gt;Service composition and orchestration&lt;/li&gt;
+&lt;li&gt;Real-time messaging&lt;/li&gt;
+&lt;li&gt;API management&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Openshift</title><link>/card/openshift/</link><pubDate>Thu, 13 Apr 2017 11:15:58 -0400</pubDate><guid>/card/openshift/</guid><description>&lt;p&gt;Integreatly runs on OpenShift. See&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.openshift.com/learn/get-started/&#34;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.openshift.com/&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Walkthroughs</title><link>/card/walkthroughs/</link><pubDate>Wed, 12 Apr 2017 11:14:48 -0400</pubDate><guid>/card/walkthroughs/</guid><description>&lt;p&gt;Each walkthrough consists of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Asciidoc code&lt;/li&gt;
+&lt;li&gt;A set of tasks the user performs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;walkthrough.json&lt;/code&gt; file&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Learning 3scale</title><link>/card/3scale/</link><pubDate>Tue, 11 Apr 2017 11:13:32 -0400</pubDate><guid>/card/3scale/</guid><description>&lt;p&gt;Learn about API management.&lt;/p&gt;</description></item><item><title>Identity</title><link>/card/identity/</link><pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate><guid>/card/identity/</guid><description>&lt;p&gt;Each Integreatly user has:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a Fuse Online instance&lt;/li&gt;
+&lt;li&gt;an AMQ Online instance&lt;/li&gt;
+&lt;li&gt;a 3scale account&lt;/li&gt;
+&lt;li&gt;access to a shared Launcher&lt;/li&gt;
+&lt;li&gt;CodeReady Workspaces (che)&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Introduction to learning Fuse</title><link>/card/learning-fuse/</link><pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate><guid>/card/learning-fuse/</guid><description>&lt;p&gt;Integreatly includes Fuse Online.
+Fuse allows you develop with the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://access.redhat.com/announcements/4097241&#34;&gt;Announcement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://access.redhat.com/announcements/3557011&#34;&gt;Finding docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://access.redhat.com/documentation/en-us/red_hat_fuse/7.3/html-single/release_notes/&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Integreatly 1.4</title><link>/card/versions/</link><pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate><guid>/card/versions/</guid><description>&lt;ul&gt;
+&lt;li&gt;3scale 2.5&lt;/li&gt;
+&lt;li&gt;Fuse 7.3&lt;/li&gt;
+&lt;li&gt;AMQ Online 1.1&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

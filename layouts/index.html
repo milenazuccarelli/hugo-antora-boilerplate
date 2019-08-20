@@ -1,0 +1,44 @@
+{{ partial "header.html" . }}
+
+<article id="start" class="doc">
+  {{ .Content }}
+</article>
+{{ $mainSections := .Site.Params.mainSections | default (slice "card") }}
+
+{{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+{{ $section_count := len $section }}
+{{ if ge $section_count 1 }}
+{{ $section_name := index (.Site.Params.mainSections) 0 }}
+<article>
+
+  <aside class="list">
+    {{ $n_posts := $.Param "recent_posts_number" | default 10 }}
+
+    {{ range (first $n_posts $section) }}
+    <div class="card-wrap">
+      <div class="card">
+        {{ $icon_image := .Params.icon_image }}
+        {{ if $icon_image }}
+        {{ $icon_image := (trim $icon_image "/") | absURL }}
+
+        <div class="icon">
+          <img src="{{ $icon_image }}" alt="" />
+        </div>
+        {{ end }}
+        {{ partial "summary" . }}
+
+      </div>
+    </div>
+    {{ end }}
+  </aside>
+  </div>
+</article>
+{{ end }}
+
+{{ partial "block" . }}
+{{ partial "block-two" . }}
+{{/*  {{ partial "block-three" . }}  */}}
+
+{{ partial "feature" . }}
+
+{{ partial "footer" . }}

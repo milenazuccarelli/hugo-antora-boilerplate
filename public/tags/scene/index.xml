@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Scene on Integreatly Website</title><link>/tags/scene/</link><description>Recent content in Scene on Integreatly Website</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 09 Apr 2019 10:58:08 -0400</lastBuildDate><atom:link href="/tags/scene/index.xml" rel="self" type="application/rss+xml"/><item><title>What is Integreatly?</title><link>/card/integreatly/</link><pubDate>Tue, 09 Apr 2019 10:58:08 -0400</pubDate><guid>/card/integreatly/</guid><description>&lt;ul&gt;
+&lt;li&gt;API connectivity&lt;/li&gt;
+&lt;li&gt;Data transformation&lt;/li&gt;
+&lt;li&gt;Service composition and orchestration&lt;/li&gt;
+&lt;li&gt;Real-time messaging&lt;/li&gt;
+&lt;li&gt;API management&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Walkthroughs</title><link>/card/walkthroughs/</link><pubDate>Wed, 12 Apr 2017 11:14:48 -0400</pubDate><guid>/card/walkthroughs/</guid><description>&lt;p&gt;Each walkthrough consists of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Asciidoc code&lt;/li&gt;
+&lt;li&gt;A set of tasks the user performs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;walkthrough.json&lt;/code&gt; file&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Integreatly 1.4</title><link>/card/versions/</link><pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate><guid>/card/versions/</guid><description>&lt;ul&gt;
+&lt;li&gt;3scale 2.5&lt;/li&gt;
+&lt;li&gt;Fuse 7.3&lt;/li&gt;
+&lt;li&gt;AMQ Online 1.1&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

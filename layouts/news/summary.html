@@ -1,0 +1,20 @@
+<div>
+    {{ if .Date }}
+    <div>
+        {{ .Date.Format "January 2, 2006" }}
+    </div>
+    {{ end }}
+    <h1 class="display">
+        <a href="{{ .URL }}">
+            {{ .Title }}
+        </a>
+    </h1>
+    <p>
+        {{ .Summary  }}
+    </p>
+    {{ if .Truncated }}
+    <div class="">
+        <a href="{{ .RelPermalink }}">Read More &rarr;</a>
+    </div>
+    {{ end }}
+</div>
